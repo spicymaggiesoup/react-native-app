@@ -1,8 +1,8 @@
 # react-native basic sample
 
-# npm install
-## yarn
+## npm install
+### yarn
 ### expo
 
-# expo cmd
-## expo init . --template blank 
+## expo cmd
+### expo init . --template blank 
