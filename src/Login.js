@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -27,6 +28,13 @@ const styles = StyleSheet.create({
 });
 
 const Login = () => {
+
+  const [text, setText ] = useState('');
+
+  const fnChangeText = () => {
+    alert('콘솔 fnChangeText', this);
+  };
+
   return (
     <View class="container" style={styles.container}>
         <Text style={{color: '#5F5F5F', marginBottom: 10}}>LOGIN</Text>
@@ -34,13 +42,15 @@ const Login = () => {
             <TextInput
                 style={styles.input}
                 placeholder="ID를 입력하세요."
+                onChangeText={newText => setText(newText)}
             />
             <TextInput
                 style={styles.input}
                 placeholder="PW를 입력하세요."
+                onChangeText={newText => setText(newText)}
             />
         </View>
-        <Button title="확인"></Button>
+        <Button title="확인" onPress={fnChangeText}/>
     </View>
   );
 }
