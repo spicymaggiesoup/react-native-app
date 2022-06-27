@@ -1,8 +1,8 @@
 # react-native basic sample
 
 ## npm install
-### + yarn
-### + expo
+  ### + yarn
+  ### + expo
 
 ## expo cmd
 ```
