@@ -1,5 +1,13 @@
 import { StyleSheet, Text, View } from 'react-native';
 
+const Menu = () => {
+  return (
+    <View style={styles.container}>
+        <Text style={styles.text}>Cowkite</Text>
+    </View>
+  );
+}
+
 const styles = StyleSheet.create({
   container: {
     height: 50,
@@ -12,13 +20,5 @@ const styles = StyleSheet.create({
       fontSize: 20,
   }
 });
-
-const Menu = () => {
-  return (
-    <View style={styles.container}>
-        <Text style={styles.text}>Cowkite</Text>
-    </View>
-  );
-}
 
 export default Menu;

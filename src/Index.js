@@ -4,14 +4,6 @@ import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import Login from './Login';
 import Menu from './Menu';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    paddingTop: 50,
-  },
-});
-
 const App = () => {
   return (
     <ScrollView>
@@ -23,5 +15,13 @@ const App = () => {
     </ScrollView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    paddingTop: 50,
+  },
+});
 
 export default App;
