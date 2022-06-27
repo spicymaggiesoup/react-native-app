@@ -1,9 +1,20 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
-const Menu = () => {
+const Toolbar = () => {
+
+  const menuIcon = '❤️';
+
+  const fnToggleDrawer = () => {
+    drawer.current.openDrawer()
+  };
+
   return (
     <View style={styles.container}>
         <Text style={styles.text}>Cowkite</Text>
+        <Button
+          title={menuIcon}
+          onPress={fnToggleDrawer}
+        />
     </View>
   );
 }
@@ -21,4 +32,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Menu;
+export default Toolbar;

@@ -13,7 +13,6 @@ const Login = () => {
   const fnChangeText = () => {
     alert(`Your ID: ${idText}, PW: ${pwText} `);
 
-
   };
 
   return (
