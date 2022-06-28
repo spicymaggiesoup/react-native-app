@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
+// import { submitButton } from '../components/Button';
+
 const Login = () => {
 
   const placeholders ={
