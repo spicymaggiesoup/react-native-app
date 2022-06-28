@@ -16,7 +16,7 @@ const Login = () => {
   };
 
   return (
-    <View class="container" style={styles.container}>
+    <View style={styles.container}>
         <Text style={{color: '#5F5F5F', marginBottom: 10}}>LOGIN</Text>
         <View class="container-form" style={{marginBottom:20}}>
             <TextInput
