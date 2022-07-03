@@ -5,7 +5,7 @@ export const login = StyleSheet.create({
         margin: 50,
         padding: 20,
         backgroundColor: '#ffffff',
-        shadowColor: '#0000,',
+        shadowColor: '#0000',
         shadowOffset: {
             width: 0,
             height: 2,
@@ -47,8 +47,4 @@ export const main = StyleSheet.create({
         color: '#A6A6A6',
         backgroundColor: '#fff',
     }
-});
-
-export const button = StyleSheet.create({
-    
 });
