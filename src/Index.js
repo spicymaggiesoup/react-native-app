@@ -1,36 +1,30 @@
-import React from 'react';
-// import { Provider } from 'react-redux';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-// import { configureStore, applyMiddleware } from 'redux';
-// import ReduxThunk from 'redux-thunk';
-// import store from './store';
-// import store from './Context/store';
-// import Provider from './Context/Provider';
-import Main from './screens/Main';
-import Count from './screens/Count';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+// styles
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+import styled from 'styled-components/native';
+// utils
+import { setIcon } from './utils/styles';
+// screens
+import Login from './screens/Login';
 
-const Stack = createStackNavigator();
 
-const App = () => {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Main" >
-        <Stack.Screen name="Main" component={Main} />
-        <Stack.Screen name="Count" component={Count} />
-      </Stack.Navigator>
-    </NavigationContainer>
+const Tab = createBottomTabNavigator();
+const Main = () => {
+    return(
+        <NavigationContainer
+            initialRouteName="Login"
+            >
+            <Tab.Navigator>
+                <Tab.Screen
+                    name="Login"
+                    component={Login}
+                    options={setIcon()}
+                >
+                </Tab.Screen>
+            </Tab.Navigator>
+        </NavigationContainer>
+    );
+}
 
-    /* <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Main"
-          component={Main}
-        >
-        </Stack.Screen>
-      </Stack.Navigator>
-    </NavigationContainer> */
-  )
-};
-
-export default App;
+export default Main;

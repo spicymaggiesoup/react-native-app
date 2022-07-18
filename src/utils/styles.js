@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 export const login = StyleSheet.create({
     container: {
@@ -48,3 +49,17 @@ export const main = StyleSheet.create({
         backgroundColor: '#fff',
     }
 });
+
+export const setIcon = (iconName = 'home', size = 24, color = '#ffffff') => {
+    return {
+        tabBarIcon: () => {
+            return (
+                <MaterialCommunityIcons
+                    name={iconName}
+                    size={size}
+                    color={color}
+                ></MaterialCommunityIcons>
+            );
+        }
+    }
+};
