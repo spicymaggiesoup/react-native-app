@@ -4,9 +4,9 @@ import { DrawerLayoutAndroid, View, Button } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import Login from './Login';
-import Menu from './Menu';
+import Menu from './Home';
 
-const Main = () => {
+const Search = () => {
   
   const titleText = "COWKITE 2022";
   const drawer = useRef(null);
@@ -36,7 +36,7 @@ const Main = () => {
       </View>
     </DrawerLayoutAndroid>
   ); 
-}
+} 
 
 const styles = StyleSheet.create({
   container: {
@@ -61,4 +61,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Main;
+export default Search;
