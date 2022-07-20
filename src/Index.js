@@ -3,8 +3,7 @@ import { DrawerLayoutAndroid, View, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
-// styles
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+
 import styled from 'styled-components/native';
 // utils
 import { setIcon } from './utils/styles';
@@ -33,19 +32,19 @@ const Index = () => {
                 <Tab.Screen
                     name="Search"
                     component={Search}
-                    options={setIcon()}
+                    options={setIcon('feature-search-outline')}
                 >
                 </Tab.Screen>
                 <Tab.Screen
                     name="Alarm"
                     component={Alarm}
-                    options={setIcon()}
+                    options={setIcon('bell-outline')}
                 >
                 </Tab.Screen>
                 <Tab.Screen
                     name="Login"
                     component={Login}
-                    options={setIcon()}
+                    options={setIcon('fingerprint')}
                 >
                 </Tab.Screen>
             </Tab.Navigator>

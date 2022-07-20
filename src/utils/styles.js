@@ -50,7 +50,7 @@ export const main = StyleSheet.create({
     }
 });
 
-export const setIcon = (iconName = 'home', size = 24, color = '#454545') => {
+export const setIcon = (iconName = 'home', size = 24, color = '#A4A4A4') => {
     return {
         tabBarIcon: () => {
             return (
