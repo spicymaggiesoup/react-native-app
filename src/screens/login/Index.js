@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Text, View, TextInput, Button, Alert } from 'react-native';
 import styled, { css } from 'styled-components/native';
-import { login } from '../utils/styles'; 
+import { login } from '../../utils/styles'; 
 // import { submitButton } from '../components/Button';
 
-const Login = () => {
+const Index = () => {
 
   const TitleText = styled.Text`
     color: #5F5F5F;
@@ -57,4 +57,4 @@ const Login = () => {
   );
 }
 
-export default Login;
+export default Index;

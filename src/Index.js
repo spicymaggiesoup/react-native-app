@@ -10,10 +10,10 @@ import { setIcon } from './utils/styles';
 // tabs
 import { tabOption } from "./components/Tabs";
 // screens
-import Login from './screens/Login';
-import Search from './screens/Search';
-import Alarm from './screens/Alarm';
-import Home from './screens/Home';
+import Login from './screens/login/Index';
+import Search from './screens/search/Index';
+import Alarm from './screens/alaram/Index';
+import Home from './screens/home/Index';
 
 const Tab = createBottomTabNavigator();
 const Index = () => {
